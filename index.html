@@ -1,129 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ha">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Editor AI Pro</title>
-<link rel="stylesheet" href="style.css">
-<style>
-body {
-  font-family: Arial;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-.header {
-  background: #111;
-  padding: 15px;
-  text-align: center;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-}
-.container {
-  width: 92%;
-  margin: auto;
-  padding: 15px;
-}
-.box {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.btn {
-  padding: 12px 18px;
-  margin: 5px;
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-  cursor: pointer;
-  color: white;
-}
-.blue { background: #007bff; }
-.green { background: #28a745; }
-.black { background: #000; }
-.orange { background: #ff9800; }
-</style>
+    <meta charset="UTF-8">
+    <title>Editor AI Pro V2</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 p-5">
 
-<div class="header">Editor AI Pro</div>
+    <h1 class="text-4xl font-bold text-center mb-2">Editor AI Pro – V2</h1>
+    <p class="text-center text-gray-600 mb-6">
+        Sabon sigar Editor AI – Mafi Sauƙi • Mafi Sauri • Mafi Kyau
+    </p>
 
-<div class="container">
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow">
 
-<!-- ================= AI ACTION PANEL ================= -->
-<div class="box">
-<h2>⚡ AI Actions Panel</h2>
-<button class="btn blue">Upload Image</button>
-<button class="btn blue">Upload Video</button>
-<button class="btn green">Download Result</button>
+        <h2 class="text-2xl font-semibold mb-4">Zaɓi Aikin AI</h2>
 
-<h3>Share Result</h3>
-<button class="btn green">WhatsApp</button>
-<button class="btn blue">Facebook</button>
-<button class="btn black">Twitter</button>
-<button class="btn orange" onclick="copyLink()">Copy Link</button>
-</div>
+        <!-- Buttons -->
+        <div class="space-y-4">
 
-<!-- ================= IMAGE GENERATOR ================= -->
-<div class="box">
-<h2>🖼️ AI Image Generator</h2>
-<p>Click the button below to generate images using AI</p>
-<button class="btn blue"
-onclick="window.open('https://huggingface.co/spaces/stabilityai/stable-diffusion', '_blank')">
-Generate AI Image
-</button>
-</div>
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold"
+                onclick="window.open('https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium', '_blank')">
+                🖼️ AI Image Generator
+            </button>
 
-<!-- ================= VIDEO GENERATOR ================= -->
-<div class="box">
-<h2>🎬 AI Video Generator</h2>
-<button class="btn blue"
-onclick="window.open('https://huggingface.co/spaces/camenduru/Text-To-Video', '_blank')">
-Generate AI Video
-</button>
-</div>
+            <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold"
+                onclick="window.open('https://huggingface.co/spaces/camenduru/Text-To-Video', '_blank')">
+                🎬 AI Video Generator
+            </button>
 
-<!-- ================= EXTRA AI TOOLS ================= -->
-<div class="box">
-<h2>🛠️ Extra AI Tools</h2>
+            <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold"
+                onclick="window.open('https://huggingface.co/spaces/facebook/MusicGen', '_blank')">
+                🎵 AI Music Generator
+            </button>
 
-<button class="btn blue"
-onclick="window.open('https://huggingface.co/spaces/facebook/MusicGen', '_blank')">
-AI Music Generator
-</button>
+            <button class="w-full bg-yellow-600 text-white py-3 rounded-lg font-semibold"
+                onclick="window.open('https://convertio.co/', '_blank')">
+                📂 AI File Converter
+            </button>
 
-<button class="btn blue"
-onclick="window.open('https://huggingface.co/spaces/NVIDIA/BigVGAN', '_blank')">
-AI Voice Generator
-</button>
+        </div>
+    </div>
 
-<button class="btn blue"
-onclick="window.open('https://huggingface.co/spaces/fffiloni/real-esrgan', '_blank')">
-Video Enhancer / Upscale
-</button>
-</div>
-
-<!-- ================= FILE CONVERTER ================= -->
-<div class="box">
-<h2>📂 AI File Converter</h2>
-<button class="btn orange"
-onclick="window.open('https://convertio.co', '_blank')">
-Open File Converter
-</button>
-</div>
-
-</div>
-
-<script>
-function copyLink(){
-  navigator.clipboard.writeText(window.location.href);
-  alert("Link Copied!");
-}
-</script>
+    <p class="text-center mt-8 text-gray-500">
+        © 2025 Editor AI Pro — Powered by Open Tools
+    </p>
 
 </body>
 </html>
