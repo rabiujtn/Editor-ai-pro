@@ -1,0 +1,65 @@
+/* Editor AI Pro – Full Web Styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+/* SECTION TITLES */
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.blue { background: #007bff; }
+.green { background: #28a745; }
+.black { background: #000; }
+.gray { background: #555; }
+
+/* IFRAME STYLING */
+.frame {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 10px;
+  background: #eee;
+}
+
+/* BOX SECTION */
+.box {
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
